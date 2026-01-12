@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Hiperligações e iframes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../design.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-lg py-5">
+
+  <div class="content-section">
+    <h2 class="section-title">iframes</h2>
+    <p>A tag <strong><span class="code-block">&lt;iframe&gt; … &lt;/iframe&gt;</span></strong> é usada para criar frames embutidas, ou seja, mostrar uma página dentro de outra.</p>
+
+    <p class="explanation">Explicação:</p>
+    <ul class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent">Permite mostrar conteúdo externo dentro da página atual.</li>
+      <li class="list-group-item bg-transparent">Exemplo: vídeos, mapas, outros sites embutidos.</li>
+    </ul>
+
+    <p class="explanation mt-3">Exemplo:</p>
+    <p><span class="code-block">&lt;iframe src="pagina.html" width="600" height="400"&gt;&lt;/iframe&gt;</span></p>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Hiperligações em molduras (frames)</h2>
+    <p>Para abrir um link numa moldura específica:</p>
+
+    <p class="explanation mt-3">Passos:</p>
+    <ol class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent">Definir o nome da moldura de destino usando o atributo <strong>name</strong> na tag &lt;frame&gt; ou &lt;iframe&gt;.</li>
+      <li class="list-group-item bg-transparent">No link, usar o atributo <strong>target</strong> com o nome da moldura.</li>
+    </ol>
+
+    <p class="explanation mt-3">Exemplo:</p>
+    <p><span class="code-block">&lt;a href="pagina.html" target="nome-da-moldura"&gt;Texto do link&lt;/a&gt;</span></p>
+
+    <hr class="my-4">
+
+    <p>Para abrir uma seção específica numa moldura, usa o mesmo, adicionando o marcador na URL:</p>
+
+    <p class="explanation mt-3">Exemplo:</p>
+    <p><span class="code-block">&lt;a href="pagina.html#marcador" target="nome-da-moldura"&gt;Link para seção&lt;/a&gt;</span></p>
+  </div>
+
+</div>
+
+</body>
+</html>

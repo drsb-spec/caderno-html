@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.io/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="design.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Caderno digital</title>
+  <script>
+    function atualizar() {
+      // Selecting the iframe element
+      var iframe = document.getElementById("principal");
+      // Adjusting the iframe height based on content
+      if (iframe) {
+        iframe.onload = function () {
+          try {
+            const contentHeight = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = (contentHeight + 20) + 'px';
+          } catch (e) {
+            iframe.style.height = '800px';
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="background"></div>
+
+  <header class="w-100">
+    <div class="container-lg">
+      <h3 class="text-start ">Tags & Elementos (HTML 5)</h3>
+      <h2 class="text-center mt-2 mb-0">
+        <a href="index.html">Caderno Digital de Programação</a>
+      </h2>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="tags/elementares.html" target="principal">Elementares</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tags/formatacao.html" target="principal">Formatação de texto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tags/hiper.html" target="principal">Hiperligação (iframe)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tags/imagens.html" target="principal">Imagens (img)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tags/elementares.html" target="principal">Multimedia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tags/tabelas.html" target="principal">Tabelas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <iframe id="principal" name="principal" src="main.html" onload="atualizar()"></iframe>
+
+  <footer class="w-100">
+    <div class="container-lg">
+      <p class="mb-2">Autor: <b>David Bastos</b> | Atualizado em: 09/10/2025</p>
+      <p class="mb-0">
+        Site da escola:
+        <a href="https://aeesgueira.pt/as-nossas-escolas/" target="_blank">aeesgueira.pt</a>
+        | Email:
+        <a href="mailto:secretaria@aeesgueira.pt">secretaria@aeesgueira.pt</a>
+      </p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

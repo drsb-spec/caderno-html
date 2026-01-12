@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tabelas em HTML</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../design.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-lg py-5">
+
+  <h1 class="text-center mb-5 fw-bold">Tabelas em HTML</h1>
+
+  <div class="content-section">
+    <h2 class="section-title">Tags principais</h2>
+
+    <p class="explanation">Explicação:</p>
+    <ul class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;table&gt;</span> → define a tabela.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;caption&gt;</span> → define a legenda da tabela.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;tr&gt;</span> → cria uma linha.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;colgroup&gt;</span> → agrupa colunas para formatação.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;col&gt;</span> → define propriedades de colunas dentro de um colgroup.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;thead&gt;</span> → grupo de cabeçalhos.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;tbody&gt;</span> → grupo com o conteúdo da tabela.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;tfoot&gt;</span> → grupo com o rodapé.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;th&gt;</span> → define uma célula de cabeçalho.</li>
+      <li class="list-group-item bg-transparent"><span class="code-block">&lt;td&gt;</span> → define uma célula de dados.</li>
+    </ul>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Atributos importantes</h2>
+
+    <p class="explanation">Explicação:</p>
+    <ul class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent"><strong>align</strong> → alinha o conteúdo horizontalmente (left, right, center).</li>
+      <li class="list-group-item bg-transparent"><strong>valign</strong> → alinha verticalmente (top, middle, bottom).</li>
+      <li class="list-group-item bg-transparent"><strong>bgcolor</strong> → define a cor de fundo.</li>
+      <li class="list-group-item bg-transparent"><strong>border</strong> → define a espessura da borda (em pixels).</li>
+      <li class="list-group-item bg-transparent"><strong>cellpadding</strong> → espaço entre o texto e a borda da célula.</li>
+      <li class="list-group-item bg-transparent"><strong>cellspacing</strong> → espaço entre as células da tabela.</li>
+      <li class="list-group-item bg-transparent"><strong>width</strong> → define a largura (em px ou %).</li>
+      <li class="list-group-item bg-transparent"><strong>colspan</strong> → une células horizontalmente.</li>
+      <li class="list-group-item bg-transparent"><strong>rowspan</strong> → une células verticalmente.</li>
+    </ul>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Exemplo:</h2>
+
+    <div class="table-wrapper">
+      <table class="table table-striped table-hover">
+        <caption>Tabela de Exemplo</caption>
+        <thead class="table-light">
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Cidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Maria</td>
+            <td class="text-center">25</td>
+            <td>Lisboa</td>
+          </tr>
+          <tr>
+            <td>João</td>
+            <td class="text-center">30</td>
+            <td>Porto</td>
+          </tr>
+          <tr class="table-light">
+            <td colspan="3" class="fw-bold">Rodapé da Tabela</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

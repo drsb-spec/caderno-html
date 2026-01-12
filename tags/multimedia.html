@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Elementos de Multimédia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../design.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container-lg py-5">
+
+  <h1 class="text-center mb-5 fw-bold">Elementos de Multimédia</h1>
+
+  <div class="content-section">
+    <h2 class="section-title">Vídeo</h2>
+    <p>O elemento <strong><span class="code-block">&lt;video&gt; … &lt;/video&gt;</span></strong> é usado para inserir vídeos numa página HTML.</p>
+
+    <p class="explanation">Explicação:</p>
+    <ul class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent">Permite mostrar vídeos diretamente na página.</li>
+      <li class="list-group-item bg-transparent">Usa o atributo <strong>controls</strong> para exibir os botões de reprodução.</li>
+      <li class="list-group-item bg-transparent">O atributo <strong>src</strong> indica o arquivo de vídeo.</li>
+    </ul>
+
+    <p class="explanation mt-3">Exemplo:</p>
+    <p><span class="code-block">&lt;video src="video.mp4" width="640" height="360" controls&gt;&lt;/video&gt;</span></p>
+
+    <div class="media-container text-center">
+      <video controls poster="../img/bryant.png" style="max-height: 360px;">
+        <source src="../img/bryant.mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="section-title">Áudio</h2>
+    <p>O elemento <strong><span class="code-block">&lt;audio&gt; … &lt;/audio&gt;</span></strong> é usado para inserir sons ou músicas numa página HTML.</p>
+
+    <p class="explanation">Explicação:</p>
+    <ul class="list-group list-group-flush bg-transparent border-0">
+      <li class="list-group-item bg-transparent">Permite reproduzir áudio diretamente na página.</li>
+      <li class="list-group-item bg-transparent">Usa o atributo <strong>controls</strong> para mostrar os controles de som.</li>
+      <li class="list-group-item bg-transparent">O atributo <strong>src</strong> indica o arquivo de áudio.</li>
+    </ul>
+
+    <p class="explanation mt-3">Exemplo:</p>
+    <p><span class="code-block">&lt;audio src="musica.mp3" controls&gt;&lt;/audio&gt;</span></p>
+
+    <div class="media-container text-center">
+      <audio controls>
+        <source src="../img/bryant.mp3">
+        Seu navegador não suporta o elemento de áudio.
+      </audio>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
