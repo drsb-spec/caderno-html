@@ -1,6 +1,3 @@
-## SCSS Migration
-- Converted custom CSS to SCSS.
-- Introduced variables and nesting.
-- Changes were developed in a feature branch following the NVIE (Git Flow) branching model.
-# caderno-html
+caderno-html
 
+A website that contains basic HTML and CSS recourses. Done with HTML, CSS and bootstrap.
