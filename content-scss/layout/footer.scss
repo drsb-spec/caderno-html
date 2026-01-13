@@ -1,0 +1,36 @@
+footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 32px 16px;
+  text-align: center;
+  font-size: 15.2px;
+  margin-top: auto;
+  color: #6c757d;
+
+  p {
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+
+  b {
+    color: #212529;
+    font-weight: 600;
+  }
+
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    :hover {
+      color: #0a58ca;
+      text-decoration: underline;
+    }
+
+    #btn {
+      right: 15px;
+      bottom: 150px;
+      position: absolute;
+    }
+  }
+}

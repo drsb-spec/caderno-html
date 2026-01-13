@@ -1,0 +1,24 @@
+@media (max-width: 576px) {
+  header {
+    padding: 1.5rem 0.75rem;
+  }
+
+  footer {
+    padding: 1.5rem 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  header h3,
+  header h2 {
+    margin: 0;
+  }
+
+  header h3 {
+    font-size: 1.1rem;
+  }
+
+  header h2 {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+  }
+}

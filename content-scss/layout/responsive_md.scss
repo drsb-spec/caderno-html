@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  iframe {
+    min-height: 400px;
+  }
+
+  .section-title {
+    font-size: 1.25rem;
+  }
+
+  .content-section {
+    padding: 1rem;
+  }
+
+  .table {
+    font-size: 0.9rem;
+  }
+
+  video,
+  audio {
+    max-width: 100%;
+  }
+}

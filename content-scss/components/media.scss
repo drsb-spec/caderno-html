@@ -1,0 +1,24 @@
+.example-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+.media-container {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+video,
+audio {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 8px;
+}
